@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    background-color: var(--MainBackground);
+    font-family: 'League Spartan', sans-serif;
+}
+
+.center-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-g {
+    display: grid;
+    place-content: center;
+}

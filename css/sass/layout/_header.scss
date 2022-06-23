@@ -1,0 +1,58 @@
+header {
+    @extend .center-f;
+    justify-content: space-between;
+    width: 320px;
+    height: 10vh;
+    margin-inline: auto;
+    padding: 1rem;
+    .logo {
+        color: var(--TextColor1);
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .theme {
+        @extend .center-f;
+        > span {
+            color: var(--TextColor1);
+            margin: 0 1.6rem 0.4rem 0;
+            font-size: .9em;
+            font-weight: 700;
+            text-transform: uppercase;
+            align-self: self-end;
+        }
+        .control {
+            .num {
+                margin-bottom: .4rem;
+                display: flex;
+                span {
+                    color: var(--TextColor1);
+                    font-weight: 600;
+                    margin-inline: auto;
+                    cursor: pointer;
+                    transition: .5s;
+                    &:hover {
+                        transform: translateY(-3px);
+                    }
+                }
+            }
+            .input {
+                width: 80px;
+                height: 25px;
+                border-radius: 10px;
+                background-color: var(--ToggleBtnBackground);
+                @extend .center-f;
+                justify-content: unset;
+                position: relative;
+                .toggle {
+                    background-color: var(--KeyBackground3);
+                    height: 18px;
+                    width: 18px;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 3px;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}
